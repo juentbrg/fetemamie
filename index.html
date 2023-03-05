@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonne fête mamie !</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <section class="lettre">
+        <div class="btn-musique">
+            <h3>Pour te mettre dans l'ambiance, je te propose de cliquer sur ce bouton (monte le son de la tablette) :</h3>
+            <button class="musique">Juste ici</button>
+        </div>
+        <div class="texte">
+            <p>Bonne fête mamie ! J'espère que tu te portes bien. je t'ai faits ce petit site pour te la souhaiter et aussi pour te montrer que mes études se passent bien 😎. Bon je me débrouille bien en programmation, mais pour le design... j'aurai dû demander des conseils à Noémie. J'en profite pour te remercier pour tout ce que tu as fait pour moi, tu m'à vraiment bien aidé quand j'en avais besoin. Aujourd'hui, je suis à fond dans mes études ! preuve à l'appui: </p>
+            <img src="/assets/etudes.png" alt="etudes" class="etudes">
+            <p>Et j'ai encore terminé un projet entre temps, et un contrôle à passer, ma progression réelle est plus proche des 70%. Bref. J'éspère que de ton côté tu profites bien avec la famille, que tu passes une bonne journée et que ma lettre aura su te faire rire avec cette petite musique d'ambiance. Merci pour tout. Je t'aime fort mamie, bonne fête !</p>
+        </div>
+    </section>
+    <script>
+        const musiqueBtn = document.querySelector('.musique');
+        const music = new Audio('assets/bonne-fete-mamie.mp3');
+        musiqueBtn.addEventListener('click', () => {
+            music.play()
+        })
+    </script>
+</body>
+</html>
